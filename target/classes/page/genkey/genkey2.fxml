@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="702.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.pageController.GenKeyController">
+    <children>
+        <Button layoutX="111.0" layoutY="21.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="110.0" text="生成密钥" />
+        <Button layoutX="279.0" layoutY="21.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="170.0" text="打开文件密钥路径" />
+        <Label layoutX="40.0" layoutY="126.0" text="应用私钥" />
+        <TextArea layoutX="110.0" layoutY="91.0" prefHeight="186.0" prefWidth="938.0" />
+        <Label layoutX="40.0" layoutY="335.0" text="应用公钥" />
+        <TextArea layoutX="110.0" layoutY="314.0" prefHeight="106.0" prefWidth="938.0" />
+        <Label layoutX="40.0" layoutY="549.0" text="获取CSR文件" />
+        <Button layoutX="144.0" layoutY="546.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="95.0" text="点击获取" />
+        <Button layoutX="524.0" layoutY="453.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="110.0" text="上传公钥" textFill="#474d9f" />
+        <Button layoutX="525.0" layoutY="606.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="146.0" text="打开文件位置" />
+    </children>
+</AnchorPane>

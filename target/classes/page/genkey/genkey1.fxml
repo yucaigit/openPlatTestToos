@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="702.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.pageController.GenKeyController">
+   <children>
+      <Label layoutX="40.0" layoutY="32.0" text="密钥格式" />
+      <Pane fx:id="pan1" layoutX="117.0" layoutY="16.0" prefHeight="48.0" prefWidth="938.0" stylesheets="@/css/main.css">
+         <children>
+            <RadioButton fx:id="pkcs8" layoutX="39.0" layoutY="16.0" mnemonicParsing="false" text="PKCS8(JAVA适用)" onAction="#clickPKCS8"/>
+            <RadioButton fx:id="pkcs1" layoutX="236.0" layoutY="16.0" mnemonicParsing="false" text="PKCS1(非JAVA适用)" onAction="#clickPKCS1"/>
+         </children>
+      </Pane>
+      <Button layoutX="117.0" layoutY="91.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="110.0" text="生成密钥" onAction="#generateKey"/>
+      <Button layoutX="273.0" layoutY="91.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="170.0" text="打开文件密钥路径" />
+      <Label layoutX="40.0" layoutY="177.0" text="应用私钥" />
+      <TextArea layoutX="117.0" layoutY="157.0" prefHeight="186.0" prefWidth="938.0" />
+      <Label layoutX="40.0" layoutY="406.0" text="应用公钥" />
+      <TextArea layoutX="117.0" layoutY="359.0" prefHeight="106.0" prefWidth="938.0" />
+      <Label layoutX="40.0" layoutY="575.0" text="获取CSR文件" />
+      <Button layoutX="142.0" layoutY="565.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="95.0" text="点击获取" />
+      <Button layoutX="524.0" layoutY="476.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="110.0" text="上传公钥" textFill="#474d9f" />
+      <Button layoutX="525.0" layoutY="606.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="146.0" text="打开文件位置" />
+   </children>
+</AnchorPane>

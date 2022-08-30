@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<!--同步验签页面-->
+
+<AnchorPane prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.pageController.SyncVfController">
+   <children>
+      <Label layoutX="43.0" layoutY="114.0" text="返回内容" />
+      <TextArea layoutX="171.0" layoutY="36.0" prefHeight="156.0" prefWidth="918.0" />
+      <Label layoutX="43.0" layoutY="236.0" text="签名方式" />
+      <TextArea layoutX="171.0" layoutY="297.0" prefHeight="138.0" prefWidth="918.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f9fa" height="48.0" layoutX="172.0" layoutY="220.0" stroke="BLACK" strokeType="INSIDE" width="918.0" />
+      <RadioButton fx:id="rsa2Radio" layoutX="209.0" layoutY="236.0" mnemonicParsing="false" text="RSA2" onAction="#chooseRSA2"/>
+      <RadioButton fx:id="rsaRadio" layoutX="291.0" layoutY="236.0" mnemonicParsing="false" text="RSA" onAction="#chooseRSA"/>
+      <Label layoutX="43.0" layoutY="328.0" text="支付宝公钥" />
+      <Label layoutX="49.0" layoutY="490.0" text="字符集" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f9fa" height="48.0" layoutX="171.0" layoutY="474.0" stroke="BLACK" strokeType="INSIDE" width="918.0" />
+      <RadioButton fx:id="utf8Radio" layoutX="209.0" layoutY="490.0" mnemonicParsing="false" text="UTF-8" onAction="#chooseUTF8"/>
+      <RadioButton fx:id="gbkRadio" layoutX="299.0" layoutY="490.0" mnemonicParsing="false" text="GBK" onAction="#chooseGBK"/>
+      <Button layoutX="172.0" layoutY="590.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="101.0" style="-fx-background-color: #6699FF;" text="同步验签" textFill="#000001" />
+   </children>
+</AnchorPane>

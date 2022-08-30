@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<!--主页面-->
+
+<AnchorPane fx:id="parent" prefHeight="950.0" prefWidth="1389.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+    <children>
+        <!--      <AnchorPane prefHeight="950.0" prefWidth="150.0">-->
+        <!--         <fx:include source="leftMenu.fxml" fx:id="leftMenu"  1180/>-->
+        <!--      </AnchorPane>-->
+        <AnchorPane layoutX="192.0" layoutY="1.0" prefHeight="119.0" prefWidth="1198.0" style="-fx-background-color: Silver;">
+            <children>
+                <fx:include source="top.fxml" />
+                <Label layoutX="982.0" layoutY="74.0" text="消息" />
+                <ImageView fitHeight="42.0" fitWidth="41.0" layoutX="972.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url('icon/logo.png');" />
+            </children>
+        </AnchorPane>
+
+
+        <AnchorPane layoutX="198.0" layoutY="143.0" prefHeight="807.0" prefWidth="1186.0" style="-fx-background-color: White;" stylesheets="@css/main.css">
+            <children>
+                <AnchorPane layoutX="220.0" layoutY="4.0" prefHeight="790.0" prefWidth="949.0">
+                    <!--                 此处可以选择一个首页 或者欢迎页写-->
+                    <!--                 <fx:include fx:id="gKeyContent" source="page/generateKey.fxml" />-->
+
+                    <TabPane layoutX="-224.0" layoutY="-52.0" prefHeight="827.0" prefWidth="1198.0" style="-fx-background-color: #FFFFFF;" tabClosingPolicy="UNAVAILABLE">
+
+                        <tabs>
+                            <Tab fx:id="content" closable="false" disable="true" text="开放银行开发助手" />
+                        </tabs>
+                    </TabPane>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+
+        <AnchorPane layoutX="14.0" layoutY="21.0" prefHeight="914.0" prefWidth="180.0" stylesheets="@css/main.css">
+            <children>
+                <ImageView fitHeight="42.0" fitWidth="41.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url('icon/logo.png');" />
+            <ScrollPane layoutX="10.0" layoutY="86.0" prefHeight="807.0" prefWidth="165.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1015.0" prefWidth="204.0" stylesheets="css/leftMenu.css">
+                     <children>
+                        <Button layoutX="-4.0" layoutY="6.0" mnemonicParsing="false" onMouseClicked="#ketTools" prefHeight="42.0" prefWidth="159.0" text="密钥工具  👈">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Button>
+                        <ScrollPane fx:id="scp1" layoutX="-23.0" layoutY="47.0" managed="false" prefHeight="241.0" prefWidth="174.0" visible="false">
+                          <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="304.0" prefWidth="200.0">
+                                 <children>
+                                    <Button layoutX="47.0" layoutY="6.0" mnemonicParsing="false" onAction="#genKey" prefHeight="27.0" prefWidth="106.0" text="生成密钥" />
+                                    <Button layoutX="47.0" layoutY="44.0" mnemonicParsing="false" onAction="#signView" prefHeight="27.0" prefWidth="106.0" text="签名" />
+                                    <Button layoutX="47.0" layoutY="82" mnemonicParsing="false" onAction="#synVerfiy" prefHeight="27.0" prefWidth="106.0" text="同步验签" />
+                                    <Button layoutX="47.0" layoutY="120" mnemonicParsing="false" onAction="#asyncView" prefHeight="27.0" prefWidth="106.0" text="异步验签" />
+                                    <Button layoutX="47.0" layoutY="158" mnemonicParsing="false" onAction="#fmtCov" prefHeight="27.0" prefWidth="106.0" text="格式转换" />
+                                    <Button layoutX="47.0" layoutY="196" mnemonicParsing="false" onAction="#keyMatch" prefHeight="27.0" prefWidth="106.0" text="密钥匹配" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+
+                         <AnchorPane fx:id="pan1" layoutX="-3.0" layoutY="61.0" prefHeight="466.0" prefWidth="159.0">
+                           <children>
+                              <Button layoutX="-1.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#commonTools" prefHeight="42.0" prefWidth="158.0" text="常用工具  👈">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <ScrollPane fx:id="scp2" layoutX="4.0" layoutY="44.0" managed="false" prefHeight="216.0" prefWidth="150.0" visible="false">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="295.0" prefWidth="200.0">
+                                       <children>
+                                          <Button layoutX="11.0" layoutY="14.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="127.0" text="我的API查询">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Button>
+                                          <Button layoutX="14.0" layoutY="60.0" mnemonicParsing="false" onAction="#apiOLTest" prefHeight="31.0" prefWidth="126.0" text="API在线调试">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Button>
+                                           <Button layoutX="14.0" layoutY="106.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="126.0" text="一键搬家工具">
+                                               <font>
+                                                   <Font size="15.0" />
+                                               </font>
+                                           </Button>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </ScrollPane>
+                              <AnchorPane fx:id="pan2" layoutX="3.0" layoutY="44.0" prefHeight="289.0" prefWidth="146.0">
+                                 <children>
+                                     <Button layoutX="-1.0" layoutY="29.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="150.0" text="智能反馈">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

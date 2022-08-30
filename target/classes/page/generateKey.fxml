@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<!--生成密钥页面-->
+
+<AnchorPane prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.pageController.GenKeyController">
+   <children>
+      <Label layoutX="55.0" layoutY="66.0" text="密钥长度" />
+      <Label layoutX="965.0" layoutY="24.0" text="使用说明" textFill="#171592" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="43.0" layoutX="123.0" layoutY="52.0" stroke="#cccccc" strokeType="INSIDE" width="928.0" />
+      <RadioButton fx:id="rsa2Rdn" layoutX="158.0" layoutY="66.0" mnemonicParsing="false" onAction="#rSa2fn" text="RSA2" />
+      <RadioButton fx:id="ctyRdn" layoutX="238.0" layoutY="66.0" mnemonicParsing="false" onAction="#chKeyfn" text="国密" />
+      <RadioButton fx:id="rsaRdn" layoutX="321.0" layoutY="66.0" mnemonicParsing="false" onAction="#rsafn" text="RSA" />
+      <Label layoutX="387.0" layoutY="66.0" text="(不推荐)" textFill="#dd0909" />
+      <AnchorPane fx:id="panParent" layoutX="4.0" layoutY="113.0" prefHeight="679.0" prefWidth="1094.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<!--格式转换页面-->
+
+<AnchorPane cache="true" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.pageController.FmtCovController">
+   <children>
+      <Label layoutX="31.0" layoutY="109.0" text="应用私钥">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="106.0" layoutY="73.0" prefHeight="240.0" prefWidth="954.0" />
+      <Button layoutX="106.0" layoutY="33.0" mnemonicParsing="false" text="从文件读入">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="31.0" layoutY="460.0" text="输出">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="106.0" layoutY="390.0" prefHeight="294.0" prefWidth="954.0" />
+      <Button layoutX="106.0" layoutY="335.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="166.0" text="转PKCS8(JAVA适用)私钥">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="403.0" layoutY="335.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="179.0" text="转PKCS1(非JAVA适用)私钥">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="691.0" layoutY="335.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="132.0" text="生成公钥文件">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="905.0" layoutY="335.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="144.0" text="打开密钥文件路径">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

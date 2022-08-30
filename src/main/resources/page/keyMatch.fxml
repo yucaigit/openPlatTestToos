@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<!--密钥匹配页面-->
+
+<AnchorPane prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.pageController.KeyMatchController">
+   <children>
+      <Label layoutX="62.0" layoutY="56.0" text="应用私钥" />
+      <Label layoutX="42.0" layoutY="50.0" text="*" textFill="#e50a0a">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="145.0" layoutY="21.0" prefHeight="219.0" prefWidth="942.0" />
+      <Button layoutX="28.0" layoutY="107.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="100.0" text="从文件读入" />
+      <Label layoutX="62.0" layoutY="304.0" text="应用公钥" />
+      <TextArea layoutX="145.0" layoutY="267.0" prefHeight="219.0" prefWidth="942.0" />
+      <Label layoutX="42.0" layoutY="298.0" text="*" textFill="#e50a0a">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="27.0" layoutY="363.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="100.0" text="从文件读入" />
+      <Button layoutX="551.0" layoutY="517.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="100.0" text="匹配" />
+      <Label layoutX="63.0" layoutY="614.0" text="匹配结果" />
+      <TextArea layoutX="145.0" layoutY="580.0" prefHeight="98.0" prefWidth="942.0" />
+   </children>
+</AnchorPane>
